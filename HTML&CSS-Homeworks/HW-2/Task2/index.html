@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    body{
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+    }
+    .blocks {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .blocks:hover{
+      background-color: blue;
+      border-radius: 50%;
+      transition: 0.5s;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="blocks"></div>
+  <div class="blocks"></div>
+  <div class="blocks"></div>
+  <div class="blocks"></div>
+  <div class="blocks"></div>
+  <div class="blocks"></div>
+</div>
+</body>
+</html>
