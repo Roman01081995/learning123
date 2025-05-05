@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.blocks{
+    width: 200px;
+    height: 200px;
+    background-color: #566e54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.Rubik{
+    font-family: 'Rubik', sans-serif;
+}
+.Sedgwick{
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+.Dancing{
+    font-family: 'Dancing Script', cursive;
+}
+.Fjalla{
+    font-family: 'Fjalla One', sans-serif;
+}
+.Indie{
+    font-family: 'Indie Flower', cursive;
+}
