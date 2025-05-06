@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+header, main, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    background-color: orangered;
+}
+
+main{
+    background-color: blue;
+}
+
+footer{
+    background-color: green;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+p{
+    font-size: 18px;
+    text-align: center;
+    margin: 0 100px 0 100px;
+}
+
+.arrow{
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    padding: 30px;
+}
