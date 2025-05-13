@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+header, footer{
+    height: 22vh;
+    background-color: #D9D9D9;
+}
+
+main{
+    display: flex;
+}
+
+aside{
+    height: 56vh;
+    width: 27vw;
+    background-color: #C0BDBD;
+}
+
+section{
+    height: 56vh;
+    width: 46vw;
+    background-color: #A4A4A4;
+    display: flex;
+    flex-direction: column;
+}
+
+.block47{
+    height: 47vh;
+    background-color: #827878;
+}
+
+.block53{
+    height: 53vh;
+    background-color: #B7ADAD;
+}

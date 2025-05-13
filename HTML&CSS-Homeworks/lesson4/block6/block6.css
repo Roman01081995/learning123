@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 5vh;
+    background-color: #D9D9D9;
+}
+
+main{
+    display: flex;
+}
+
+footer{
+    height: 9vh;
+    background-color: #D9D9D9;
+}
+
+.block1{
+    width: 29vw;
+    height: 86vh;
+    background-color: #A4A4A4;
+}
+
+.block2{
+    width: 31vw;
+    height: 86vh;
+    background-color: #C1C1C1;
+}
+
+.block3{
+    width: 40vw;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    height: 50vh;
+    width: 40vw;
+    background-color: #7F7A7A;
+}
+
+.bottom{
+    height: 50vh;
+    width: 40vw;;
+    background-color: #6B6161;
+}
