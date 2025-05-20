@@ -1,0 +1,26 @@
+.loader1 {
+    width: 250px;
+    height: 250px;
+    background-color: #0984e3;
+    border-radius: 0%;
+    animation: bounce 1.5s infinite ease-in-out;
+    margin: 40vh auto;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        border-radius: 0%;
+        background-color: #0984e3;
+    }
+    50% {
+        transform: translateY(-60px);
+        border-radius: 50%;
+        background-color: #6c5ce7;
+    }
+    100% {
+        transform: translateY(0);
+        border-radius: 0%;
+        background-color: #0984e3;
+    }
+}
