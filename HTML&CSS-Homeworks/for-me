@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/png" href="/img/star_18618230.png">
     <style>
         p{
             margin: 20px 0 10px 20px;
@@ -30,21 +31,6 @@
         .fifth-block ul li::first-letter{
             font-size: 30px;
             color: red;
-        }
-
-        div ul li{
-            list-style: none;
-        }
-        
-        div ul li::before{
-            content: '';
-            background-image: url(/img/star_18618230.png);
-            width: 15px;
-            height: 15px;
-            display: inline-block;
-            background-size: cover;
-            vertical-align: middle;
-            margin-right: 5px;
         }
     </style>
 </head>
