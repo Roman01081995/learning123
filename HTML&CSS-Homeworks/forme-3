@@ -62,21 +62,24 @@
             font-weight: 600;
         }
 
-        .login-link{
+        .login-link {
             display: flex;
             align-items: center;
+            justify-content: center;
+            gap: 8px;
             text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
             font-weight: 600;
-            color: #3c5181;
-            width: auto;
+            color: #385185;
+            font-size: 14px;
         }
         
-        .icon{
+        .icon {
             width: 20px;
             height: 20px;
             object-fit: contain;
         }
+
     </style>
 </head>
 <body>
@@ -90,8 +93,8 @@
     <p class="other">АБО</p>
 
     <a href="https://facebook.com/login" class="login-link">
-    <img src="./img/social_15707884.png" alt="facebook-icon" class="icon" >
-    <span>Увійти через Facebook</span>
+    <img src="./img/social_15712122107884.jpg" alt="facebook-icon" class="icon" >
+    <span class="fb-text">Увійти через Facebook</span>
     </a>
     </div>
     <footer>
