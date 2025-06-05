@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #3b898a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .container{
+            background-color: #fff;
+            width: 550px;
+            height: 350px;
+            border-radius: 10px;
+        }
+
+        header{
+            height: 100px;
+            background-color: #ebf3f3;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        h1{
+              font-family: "Nunito Sans", sans-serif;
+              font-weight: 600;
+        }
+
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input{
+            display: block;
+        }
+
+        .login{
+            width: 400px;
+            height: 35px;
+            margin-top: 15px;
+        }
+
+        .password{
+            width: 400px;
+            height: 35px;
+            margin-top: 20px;
+        }
+
+        .below{
+            display: flex;
+            justify-content: space-between !important;
+            align-items: center;
+            width: 400px;
+            margin-top: 20px;
+
+        }
+
+        .label-1{
+            display: flex;
+        }
+        .label-1 span{
+            margin-right: 5px;
+        }
+
+        .button{
+            width: 80px;
+            height: 25px;
+            border-radius: 10px;
+            border-color: #000000b0;
+            background-color: #3b898a28;
+            border-width: 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Вхід в особистий кабінет</h1>
+        </header>
+        <form>
+        <input type="email" name="email" placeholder="Логін або email" class="login">
+        <input type="password" name="password" placeholder="Пароль" class="password">
+        <div class="below">
+        <label class="label-1">
+            <span>Запам’ятати мене</span>
+            <input type="checkbox">
+        </label>
+        <input type="submit" name="submit" value="Вхід" class="button">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
