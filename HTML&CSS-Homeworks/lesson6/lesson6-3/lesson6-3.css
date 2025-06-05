@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    border: 2px solid #ebebeb;
+}
+.container .instagram-logo{
+    width: 170px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+form .login, .password{
+    width: 260px;
+    height: 35px;
+    background-color: #fafafa;
+    border: 1.5px solid #ebebeb;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form .button{
+    width: 280px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #79b4f4;
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.other{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    color: #777777;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    color: #385185;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.missing-password{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    color: #385185;
+    font-size: 11px;
+    margin-top: 20px;
+}
