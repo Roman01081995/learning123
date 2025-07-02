@@ -6,32 +6,24 @@
       padding: 0;
     }
 
-    body {
-      font-family: Inter, sans-serif;
-      padding: 64px 48px;
-      display: flex;
-      justify-content: center;
-    }
-
     .container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      max-width: 1200px;
-      gap: 48px;
+      justify-content: center;
+      align-items: center;
+      width: 1180px;
+      gap: 32px;
+      margin: 0 auto;
+      padding: 64px 0px;
     }
 
     .cards {
-      flex: 1 1 calc(33.333% - 32px);
-      max-width: calc(33.333% - 32px);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      width: 372px;
+      text-align: center;
     }
 
     .cards img {
       width: 100%;
-      height: auto;
     }
 
     .cards h3 {
