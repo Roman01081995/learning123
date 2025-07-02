@@ -1,16 +1,10 @@
-@media screen and (max-width: 768px) {
-    body{
+@media screen and (max-width: 767px) {
+      .cards {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      body {
         padding: 32px 24px;
+      }
     }
-
-    .container{
-        column-gap: 0px;
-        row-gap: 0px;
-    }
-
-    .cards{
-        width: 219px;
-        height: 239px;
-        
-    }
-}
