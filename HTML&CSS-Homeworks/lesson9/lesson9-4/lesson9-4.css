@@ -1,0 +1,133 @@
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .grid{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 20% 60% 20%;
+            grid-template-columns: 70% 30%;
+            grid-template-areas: 
+            "header header"
+            "left-aside right-aside"
+            "footer footer"
+            ;
+        }
+
+        header{
+            grid-area: header;
+            background: #8D8484;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer{
+            grid-area: footer;
+            background: #BDBDBD;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-aside{
+            grid-area: left-aside;
+            display: grid;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "content-1"
+            "content-2"
+            "content-3"
+            ;
+        
+        }
+
+        .content-1{
+            grid-area: content-1;
+            background: #776969;
+            display: grid;
+            width: 100vw;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-2{
+            grid-area: content-2;
+            background: #643030;
+            display: grid;
+            width: 100vw;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-3{
+            grid-area: content-3;
+            background: #441818;
+            display: grid;
+            width: 100vw;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right-aside{
+            grid-area: right-aside;
+            display: grid;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "spam-1"
+            "spam-2"
+            ;
+
+        }
+
+        .spam-1{
+            grid-area: spam-1;
+            background: #937575;
+            display: grid;
+            width: 30vw;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spam-2{
+            grid-area: spam-2;
+            background: #644C4C;
+            display: grid;
+            width: 30vw;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header p, footer p{
+            color: #000;
+            font-family: Inter, sans-serif;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .left-aside p, .right-aside p{
+            color: #FFF;
+            font-family: Inter, sans-serif;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    
