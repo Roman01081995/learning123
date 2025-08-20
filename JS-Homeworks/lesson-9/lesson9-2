@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson9-2</title>
+</head>
+<body>
+    <script>
+/*– Є масив:
+
+[‘Main’,’Products’,’About us’,’Contacts’]
+
+Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)*/
+
+let elements = ['Main','Products','About us','Contacts'];
+
+ let ul = document.createElement("ul");
+
+document.body.appendChild(ul);
+
+for (let element of elements) {
+    let li = document.createElement("li");
+    li.innerText = element;
+    ul.appendChild(li);
+}
+
+    </script>
+</body>
+</html>
