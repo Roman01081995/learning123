@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson9-1</title>
+</head>
+<body>
+    <script>
+/*– створити блок,
+
+– додати йому класи wrap, collapse, alpha, beta
+
+– додати стилі (довільні значення) : колір фону, колір тексту, розмір тексту
+
+– додати цей блок в body.
+
+– клонувати його повністю, та додати клон в body.*/
+
+let div = document.createElement("div");
+document.body.appendChild(div);
+div.innerText = "Привіт Okten"
+
+div.classList.add("wrap", "collapse", "alpha", "beta");
+
+div.style.color = "yellow";
+div.style.backgroundColor = "red";
+div.style.fontSize = "50px";
+
+let clone = div.cloneNode(true);
+document.body.appendChild(clone);
+    
+    </script>
+</body>
+</html>
