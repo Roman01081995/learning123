@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson9-5</title>
+  <style>
+    .course {
+      margin: 15px;
+      padding: 10px;
+    }
+    .month, .hour {
+      margin: 5px 0;
+      padding: 5px;
+      display: inline-block;
+
+    }
+    .modules {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+];
+
+    
+for (let course of coursesArray) {
+    let courseDiv = document.createElement("div");
+    courseDiv.classList.add("course");
+
+let title = document.createElement("h2");
+    title.innerText = course.title;
+
+let month = document.createElement("div");
+    month.classList.add("month");
+    month.innerText = `Month duration: ${course.monthDuration}`;
+
+let hour = document.createElement("div");
+    hour.classList.add("hour");
+    hour.innerText = `Hour duration: ${course.hourDuration}`;
+
+let modulesLabel = document.createElement("div");
+    modulesLabel.classList.add("modules");
+    modulesLabel.innerText = "modules:";
+
+let modulesList = document.createElement("ul");
+    for (let module of course.modules) {
+    let li = document.createElement("li");
+    li.innerText = module;
+    modulesList.appendChild(li);
+    modulesLabel.appendChild(modulesList);
+    }
+
+courseDiv.appendChild(title);
+courseDiv.appendChild(month);
+courseDiv.appendChild(hour);
+courseDiv.appendChild(modulesLabel);
+courseDiv.appendChild(modulesList);
+
+document.body.appendChild(courseDiv);
+}
+  </script>
+</body>
+</html>
