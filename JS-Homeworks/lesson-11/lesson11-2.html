@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="recipes"></div>
+
+<script>
+fetch('https://dummyjson.com/recipes')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById("recipes");
+
+    data.recipes.forEach(recipe => {
+      const recipeDiv = document.createElement("div");
+      recipeDiv.style.border = "1px solid black";
+      recipeDiv.style.margin = "10px";
+      recipeDiv.style.padding = "10px";
+
+      for (let key in recipe) {
+        const p = document.createElement("p");
+
+        if (Array.isArray(recipe[key])) {
+          p.textContent = key + ":";
+          recipeDiv.appendChild(p);
+
+          const ul = document.createElement("ul");
+          recipe[key].forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            ul.appendChild(li);
+          });
+
+          recipeDiv.appendChild(ul);
+        } else if (key === "image") {
+          const img = document.createElement("img");
+          img.src = recipe[key];
+          img.style.width = "200px";
+          recipeDiv.appendChild(img);
+        } else {
+          p.textContent = key + ": " + recipe[key];
+          recipeDiv.appendChild(p);
+        }
+      }
+
+      container.appendChild(recipeDiv);
+    });
+  });
+</script>
+</body>
+</html>
