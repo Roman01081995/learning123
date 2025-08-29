@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="carts"></div>
+
+  <script>
+    fetch('https://dummyjson.com/carts')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("carts");
+
+        data.carts.forEach(cart => {
+          const cartDiv = document.createElement("div");
+          cartDiv.style.border = "1px solid black";
+          cartDiv.style.margin = "10px";
+          cartDiv.style.padding = "10px";
+
+          for (let key in cart) {
+            if (key !== "products") {
+              const p = document.createElement("p");
+              p.textContent = key + ": " + cart[key];
+              cartDiv.appendChild(p);
+            }
+          }
+
+          const productsHeader = document.createElement("p");
+          productsHeader.textContent = "Products:";
+          cartDiv.appendChild(productsHeader);
+
+          cart.products.forEach(product => {
+            const productDiv = document.createElement("div");
+            productDiv.style.marginLeft = "20px";
+            productDiv.style.marginBottom = "10px";
+
+            const img = document.createElement("img");
+            img.src = product.thumbnail;
+            img.alt = product.title;
+            img.style.width = "100px";
+            productDiv.appendChild(img);
+
+            const productInfo = document.createElement("p");
+            productInfo.textContent = `
+            id: ${product.id}, 
+            title: ${product.title}, 
+            price: ${product.price}, 
+            quantity: ${product.quantity},
+            total: ${product.total},
+            discountPercentage: ${product.discountPercentage},
+            discountedTotal: ${product.discountedTotal}
+            `;
+            productDiv.appendChild(productInfo);
+
+            cartDiv.appendChild(productDiv);
+          });
+
+          container.appendChild(cartDiv);
+        });
+      })
+  </script>
+</body>
+</html>
